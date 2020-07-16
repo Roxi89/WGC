@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TinDog</title>
+  <title>Wheelie Good Cleaning</title>
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -19,37 +19,43 @@
 
 <body>
 
-  <section id="title">
+  <section class= "white-section" id="title">
     <div class="container-fluid">
 
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">tindog</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- <a class="navbar-brand">
+          <img class="logo" src="images/index.jfif" alt="logo">
+        </a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="">Before/After Gallery</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+
           </ul>
         </div>
       </nav>
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
-          <h1>Meet new and interesting dogs nearby.</h1>
-          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button>
-          <button class="btn btn-outline-light btn-lg download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+          <img class="title-image" src="images/index.jfif" alt="logo">
         </div>
+
         <div class="col-lg-6">
-          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+          <h1 class="big-heading">A commercial and domestic wheelie bin cleaning services</h1>
+          <button class="btn btn-dark btn-lg contact-button" type="button"><i class="fas fa-envelope"></i> Contact Us</button>
         </div>
       </div>
     </div>
@@ -59,105 +65,168 @@
 
   <!-- Features -->
 
-  <section id="features">
+  <!-- <section class= "colored-section" id="features">
+    <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-4 feature-section">
-        <i class="fas fa-check-circle icon fa-4x"></i>
-        <h3>Easy to use.</h3>
-        <p>So easy to use, even your dog could do it.</p>
+      <div class="col-xl-3 feature-section">
+        <img src="images/rubbish.png" class="icon">
+        <h3 class="feature-title">Full Solution</h3>
+        <p>A commercial and domestic wheelie bin cleaning services.</p>
       </div>
-      <div class="col-lg-4 feature-section">
-        <i class="fas fa-bullseye icon fa-4x"></i>
-        <h3>Elite Clientele</h3>
-        <p>We have all the dogs, the greatest dogs.</p>
+      <div class="col-xl-3 feature-section">
+        <img src="images/shine.png" class="icon">
+        <h3 class="feature-title">Clean and Fresh</h3>
+        <p>Our Comprehensive wheelie bin cleaning service includes a full disinfectant and deodorisation of your wheelie-bin. </p>
       </div>
-      <div class="col-lg-4 feature-section">
-        <i class="fas fa-heart icon fa-4x"></i>
-        <h3>Guaranteed to work.</h3>
-        <p>Find the love of your dog's life or your money back.</p>
+      <div class="col-xl-3 feature-section">
+        <img src="images/eco-friendly.png" class="icon">
+        <h3 class="feature-title">Environmentally Friendly</h3><br />
+        </br />
+        <p>All of our Products are environmentally friendly and we dispose of any waste whilst always conforming to the highest quality of environmental standards.</p>
+      </div>
+      <div class="col-xl-3 feature-section">
+        <img src="images/checkmark.png" class="icon">
+        <h3 class="feature-title">A Package for you</h3>
+        <p>From an initial deep clean to our maintenance packages, we offer a unique service and all of our operatives fully vetted and trained.</p>
       </div>
     </div>
-  </section>
+  </div>
+
+  </section> -->
 
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">"Fantastic service from start to finish. Easy to contact and arrange cleaning. Thanks guys, see you again next month."</h2>
+          <em>Laura Lewis</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"Excellent service and great price, highly recommend."</h2>
+          <em>Daniel Mallett</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"I can't recommend this company enough. They are brilliant value for money and do a fantastic job."</h2>
+          <em>Keeley's Cleaning Services</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"Best in the business."</h2>
+          <em>Euan Coutts</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Quality job by the guys from Wheelie Good Cleaning. These bins haven't been cleaned for about 3 years.... they now look and smell like new. Wheelie good job chaps.</h2>
+          <em>Zachary Stavert</em>
+        </div>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
 
   </section>
-
-
-  <!-- Press -->
-
-  <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
-
-  </section>
-
 
   <!-- Pricing -->
 
-  <section id="pricing">
+  <section class="white-section" id="pricing">
 
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for your and your dog.</p>
+    <h2 class="section-heading">Pricing</h2>
+    <p>Text here...?</p>
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Residential Bins</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text"></h2>
+            <p>1st time deep clean - £10 per bin</p>
+            <p>£5 per bin thereafter</p>
+            <p>£8 for two bins</p>
+            <p>£9 for all three bins (recycling, general waste and garden waste)</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Commercial Bins</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text"></h2>
+            <p>1st time deep clean - £25 per bin</p>
+            <p>£10 per bin thereafter</p>
+            <p>£15 for two bins</p>
+            <p>£5 per bin above two</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
 
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+    </div>
 
   </section>
 
 
   <!-- Call to Action -->
 
-  <section id="cta">
+  <section class="colored-section" id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <div class="container-fluid">
 
+      <h3 class="">Book in with us today</h3></br>
+      <p class= "cta-info"><i class="fas fa-phone"></i> Call us on 07585 366 121</p>
+      <p class= "cta-info"><i class="fas fa-envelope"></i> Email us at info@wheeliegoodcleaning.co.uk</p>
+    </div>
   </section>
 
-
+<section class="white-section" id="contact">
+    <div class="container">
+   <div style="text-align:center; padding-top:100px;">
+     <h2>Contact Us</h2>
+   </div>
+   <div class="row">
+     <div class="column">
+       <form action="/action_page.php">
+         <label for="fname">Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="">
+         <label for="lname">Address</label>
+         <input type="text" id="lname" name="lastname" placeholder="">
+         <label for="country">Contact Number</label>
+         <input type="text" id="lname" name="lastname" placeholder="">
+         <label for="country">Number of bins</label>
+         <input type="text" id="lname" name="lastname" placeholder="">
+         <label for="country">Colour of bins</label>
+         <input type="text" id="lname" name="lastname" placeholder="">
+         <input type="submit" value="Submit">
+       </form>
+     </div>
+   </div>
+ </div>
+</section>
   <!-- Footer -->
 
-  <footer id="footer">
-
-    <p>© Copyright 2018 TinDog</p>
-
+  <footer class="colored-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2020 Wheelie Good Cleaning</p>
+    </div>
   </footer>
 
 

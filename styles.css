@@ -1,29 +1,63 @@
 
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
 
-#title {background-color: #ff4c68; color:#fff;}
-body {font-family: "Montserrat";}
-h1 {
- font-family: "Montserrat";
- font-size: 3.5rem;
- font-weight: 900;
- line-height: 1.5;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
 }
-h3 {
-  font-size: 1,5rem;
-  font-weight: 900;
-}
+
 p {
-  color: #818181;
+  color: #8f8f8f;
 }
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat";
+  font-weight:900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #484848;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+  color:#484848;
 }
 
 /* Navigation Bar */
 
-.navbar{
+.navbar {
   padding: 0 0 4.5rem;
+}
+
+.logo {
+  width: 200px;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .nav-item {
@@ -33,42 +67,171 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat";
-  font-weight: 300;
 }
 
-/* Download Buttons */
+/* Buttons */
 
-.download-button {
+.contact-button {
   margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 /* Title Image */
 
 .title-image {
   width: 60%;
-  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2rem;
-  font-weight: "bold";
-}
+/* Features Section */
 
-/* Features */
 #features {
-  padding: 7% 15%;
+  position: relative;
 }
 
-.feature-section {
-  text-align: center;
-  padding: 5%;
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
 }
 
 .icon {
-  color: #ef8172;
-  margin-bottom:1rem;
+  width:50px;
+  margin-bottom: 1rem;
 }
 
-.icon:hover
-{color: #ff4c68;}
+/* Testimonial Section */
+
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+.cta-info {
+  font-size: 1.5rem;
+}
+
+/* Contact Form Section */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
