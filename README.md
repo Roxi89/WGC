@@ -1,1 +1,1 @@
-# WGC
+TinDog Starting Files
